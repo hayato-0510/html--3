@@ -18,3 +18,17 @@ h1 {
 .align-right {
     text-align: right;
 }
+@media only screen and (max-width: 992px) {
+    .radio-inline {
+        display: block;
+        margin: 0 !important;
+    }
+}
+.required {
+    margin-left: .3em;
+    color: #f33;
+    font-size: .9em;
+    padding: 2px;
+    background-color: #fee;
+    font-weight: bold;
+}

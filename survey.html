@@ -28,12 +28,12 @@
       <div class="col-sm-2">
         <p> </p>
       </div>
-      <div class="col-sm-8 col-sm-offset-4">
+    <div class="col-sm-8 col-sm-offset-4">
         <p>この度は、本書をご利用いただきありがとうございます。恐れ入りますが、以下のフォームにご記入いただき、送信していただけると幸いです。</p>
       <div class="form-group">
-        <lavel for="name">お名前</lavel>
+        <lavel for="name">お名前<span class=required>必須</span></label>
         <input type="text" id="name" name="name" class="form-control"
-        placeholder="例）杉本隼都">
+        placeholder="例）杉本隼都" required>
       </div>
       <div class="form-group">
         <label for="job">ご職業</label>
@@ -44,7 +44,51 @@
           <option value="その他">その他</option> 
         </select>
       </div>
-      </div><!--col-sm-8-->
+      <div class="form-group">
+        <label>知りたい内容（複数回答可）</label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="q1" value="html">
+            HTML
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="q1" value="css">
+              CSS
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="q1" value="javascript">
+             javascript
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>理解度はいかがですか？</lavel>
+        <div>
+          <label class="radio-inline">
+            <input type="radio" name="q2" id="q2_1" value="1">理解できなかった
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="q2" id="q2_2" value="2">だいたい理解できた
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="q2" id="q2_3" value="3">理解できた
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="q2" id="q2_4" value="" checked>回答しない
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">ご意見</label>
+        <textarea name="message" id="message" rows="10" class="form-control">
+        </textarea>
+      </div>
+      <button type="submit" class="btn btn-default">送信する</button>
+     </div><!--col-sm-8-->
     </form>
   </div>
   <hr>
